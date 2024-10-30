@@ -27,7 +27,24 @@
 /* main */
 
 .main {
-  padding: 24px 0;
+  padding: 0 0 24px 0;
+}
+
+.free-container {
+  padding: 10px;
+  background: #62a1ff;
+  margin-bottom: 30px;
+}
+
+.free {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 90%; /* 13.5px */
+  letter-spacing: -0.3px;
 }
 
 .title-container {
