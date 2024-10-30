@@ -30,14 +30,42 @@
   padding: 24px 0;
 }
 
+.title-container {
+  margin-bottom: 10px;
+}
+
 .title {
   color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 25px */
+  letter-spacing: -0.75px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 31px */
+  letter-spacing: -0.93px;
+  text-transform: uppercase;
+}
+
+.accent-title {
   text-align: center;
   font-family: 'Bebas Neue Cyrillic';
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 90%; /* 40.5px */
   letter-spacing: -1.35px;
 
   background: linear-gradient(90deg, #eaa800 0%, #ffcf20 50%, #eaa800 100%);
@@ -46,82 +74,40 @@
   -webkit-text-fill-color: transparent;
 }
 
-.subtitle {
-  margin-top: -8px;
-
-  color: #090909;
-  text-align: center;
-  font-family: 'Bebas Neue Cyrillic';
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  letter-spacing: -1.35px;
-
-  margin-bottom: 8px;
-}
-
 .desc {
   color: #62a1ff;
   text-align: center;
   font-family: 'Futura PT';
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 450;
-  line-height: 90%; /* 21.6px */
-  letter-spacing: -0.48px;
+  line-height: 90%; /* 18px */
+  letter-spacing: -0.4px;
 
-  margin-bottom: 40px;
+  max-width: 236px;
+  margin: 0 auto 40px auto;
 }
 
-.video-text {
-  color: #090909;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 105%; /* 15.75px */
-  letter-spacing: -0.3px;
+.smooth-image {
+  display: block;
 
-  margin-bottom: 12px;
-}
-
-.video-wrapper {
-  margin-bottom: 16px;
-}
-
-.timer-text {
-  color: #090909;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 17.25px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 100%; /* 17.25px */
-  letter-spacing: -0.345px;
-  text-transform: uppercase;
-}
-
-.countdown {
-  margin-bottom: 40px;
-}
-
-.ready {
-  display: none;
+  margin: 0 auto 48px auto;
 }
 
 .text {
   color: #090909;
   text-align: center;
   font-family: 'Futura PT';
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%; /* 20px */
-  letter-spacing: -0.4px;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+
+  max-width: 320px;
+
+  margin: 0 auto 20px auto;
 }
 
 .text span {
