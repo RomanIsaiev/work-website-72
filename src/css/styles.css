@@ -1,0 +1,200 @@
+/* Fonts */
+
+@import url(../fonts/fonts.css);
+
+/* Base */
+
+@import url(../css/base/reset.css);
+@import url(../css/base/normalize.css);
+
+/* Utils */
+
+@import url(../css/utils/variables.css);
+@import url(../css/utils/common.css);
+
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+/* main */
+
+.main {
+  padding: 24px 0;
+}
+
+.title {
+  color: #090909;
+  text-align: center;
+  font-family: 'Bebas Neue Cyrillic';
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1.35px;
+
+  background: linear-gradient(90deg, #eaa800 0%, #ffcf20 50%, #eaa800 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  margin-top: -8px;
+
+  color: #090909;
+  text-align: center;
+  font-family: 'Bebas Neue Cyrillic';
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -1.35px;
+
+  margin-bottom: 8px;
+}
+
+.desc {
+  color: #62a1ff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 90%; /* 21.6px */
+  letter-spacing: -0.48px;
+
+  margin-bottom: 40px;
+}
+
+.video-text {
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 105%; /* 15.75px */
+  letter-spacing: -0.3px;
+
+  margin-bottom: 12px;
+}
+
+.video-wrapper {
+  margin-bottom: 16px;
+}
+
+.timer-text {
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 17.25px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 17.25px */
+  letter-spacing: -0.345px;
+  text-transform: uppercase;
+}
+
+.countdown {
+  margin-bottom: 40px;
+}
+
+.ready {
+  display: none;
+}
+
+.text {
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text span {
+  color: #3e75e5;
+}
+
+.link-btn {
+  display: block;
+  padding: 24px;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+
+  border-radius: 70px;
+  background: linear-gradient(90deg, #3e75e5 0%, #62a1ff 50%, #3e75e5 100%);
+
+  animation: pulseScale 2000ms infinite;
+}
+
+/* timer */
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-time {
+  display: block;
+  color: #62a1ff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  width: 50px;
+}
+
+.countdown-doubledot {
+  content: '';
+  display: flex;
+  height: 30px;
+  width: 1px;
+  background: #62a1ff;
+  margin: 0 auto;
+}
+
+.countdown-label {
+  color: #62a1ff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  margin-top: -6px;
+}
