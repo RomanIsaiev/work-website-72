@@ -26,6 +26,40 @@
 
 /* main */
 
+.container {
+  position: relative;
+}
+
+.year-tree {
+  position: absolute;
+  right: -20px;
+  top: 130px;
+
+  transform: rotate(5deg);
+}
+
+.ready {
+  position: relative;
+}
+
+.big-snow {
+  position: absolute;
+  left: -20px;
+  bottom: -24px;
+
+  z-index: 999;
+}
+
+.small-snow {
+  position: absolute;
+  right: -20px;
+  top: 40px;
+
+  z-index: 999;
+}
+
+/*  */
+
 .main {
   padding: 0 0 24px 0;
 }
@@ -199,4 +233,53 @@
   letter-spacing: -0.28px;
 
   margin-top: -6px;
+}
+
+/* snow */
+
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  background-color: rgb(212, 213, 243);
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes diagonal-fall {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+    transform: translate(10vw, 100vh);
+  }
 }
